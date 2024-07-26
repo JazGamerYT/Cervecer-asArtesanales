@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERVEZAS ARTESANALES SMCS - Nuestras Cervezas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Agregar estilos para el contenedor del mapa */
+        .mapa-3d {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+        }
+        /* Asegurarse de que el mapa se muestre correctamente */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titulo-banner">
+        <h1> CERVEZAS ARTESANALES SMCS</h1>
+    </div>
+    <div class="botones">
+        <ul>
+            <li><a href="index.html" onclick="mostrarInicio()">Inicio</a></li>
+            <li><a href="nuestras_cervezas.html" onclick="mostrarCervezas()">Nuestras Cervezas</a></li>
+            <li><a href="ubicaciones_horarios.html" onclick="mostrarUbicaciones()">Dirección y Horarios</a></li>
+            <li><a href="inventario.html" onclick="mostrarInventario()">Inventario </a></li>
+            <li><a href="contactos.html" onclick="mostrarContactos()">Contactos </a></li>
+            <li><a href="factura.html" onclick="mostrarFactura()">Factura </a></li>
+        </ul>
+    </div>
+    <div class="fondo">
+        <img src="./img/fondoubi.jpg" alt="Fondo de la página">
+    </div>
+    <br>
+    <br>
+    <div class="cuadro-info">
+        <h1 class="titulo">Dirección y Horario</h1>
+        <div class="info ubicacion">
+            <h2>Dirección</h2>
+            <p>Nuestro local está ubicado en la Calle Rio Yasuní diagonal a la Avenida Tsachila, Santo Domingo de los Tsáchilas, Ecuador.</p>
+        </div>
+        <div class="info horario">
+            <h2>Horario</h2>
+            <div class="horario">
+                <p>Miércoles: 5:00 pm a 12:00 am</p>
+                <p>Jueves: 5:00 pm a 12:00 am</p>
+                <p>Viernes: 5:00 pm a 12:00 am</p>
+                <p>Sábado: 5:00 pm a 12:00 am</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar el contenedor del mapa -->
+    <div class="mapa-3d">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10774.859875785457!2d-79.18314405047716!3d-0.23460325068042642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d1c1ab118f3b3d%3A0x7b295ffb8f5367a8!2sSanto%20Domingo%20de%20los%20Ts%C3%A1chilasa%2C%20Ecuador!5e0!3m2!1ses!2ses!4v1696942267833!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cervezas Artesanales SMCS - Santos Michael, Moreta Bryan, Sumi Jazmany, Campoverde Wilson</p>
+    </footer>
+
+    <script src="botonesfunc.js"></script>
+</body>
+
+</html>
